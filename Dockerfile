@@ -4,7 +4,7 @@ FROM nvidia/cuda:9.0-cudnn7-devel-ubuntu16.04
 # File Author / Maintainer
 MAINTAINER Johannes Debler <johannes.debler@curtin.edu.au>
 
-ARG PACKAGE_VERSION=4.0.15
+ARG PACKAGE_VERSION=4.2.2
 ARG BUILD_PACKAGES="wget apt-transport-https"
 ARG DEBIAN_FRONTEND=noninteractive
 
