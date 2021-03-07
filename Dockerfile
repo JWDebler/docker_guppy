@@ -5,11 +5,11 @@ FROM nvidia/cuda:9.0-cudnn7-devel-ubuntu16.04
 MAINTAINER Johannes Debler <johannes.debler@curtin.edu.au>
 
 ARG PACKAGE_VERSION=4.4.2
-ARG BUILD_PACKAGES="wget apt-transport-https"
 ARG DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update && \
-    apt-get install --yes $BUILD_PACKAGES \
+    apt-get install --yes wget \
+                          apt-transport-https \
                           libcurl4-openssl-dev \
                           libssl-dev \
                           libhdf5-cpp-11 \
