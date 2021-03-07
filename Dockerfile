@@ -22,8 +22,7 @@ RUN apt-get update && \
                           libboost-regex1.58.0 \
                           libboost-system1.58.0 \
                           libboost-log1.58.0 \
-                          libboost-iostreams1.58.0 \
-                          wget && \
+                          libboost-iostreams1.58.0 && \
     cd /tmp &&\
     wget -q https://mirror.oxfordnanoportal.com/software/analysis/ont_guppy_${PACKAGE_VERSION}-1~xenial_amd64.deb && \
     dpkg -i --ignore-depends=nvidia-384,libcuda1-384 /tmp/ont_guppy_${PACKAGE_VERSION}-1~xenial_amd64.deb && \
