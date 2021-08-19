@@ -4,7 +4,7 @@ FROM nvidia/cuda:9.0-cudnn7-devel-ubuntu16.04
 # File Author / Maintainer
 MAINTAINER Johannes Debler <johannes.debler@curtin.edu.au>
 
-ARG PACKAGE_VERSION=5.0.7
+ARG PACKAGE_VERSION=5.0.11
 ARG DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update && \
